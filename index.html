@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Cartinha 💌</title>
+    <title>Cartinha 💛</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,30 +11,29 @@
 
     <audio id="music" src="musica.mp3"></audio>
 
-    <!-- Tela onde VOCÊ vai escrever a carta -->
-    <div id="editor-container">
-        <h2>Escreva aqui sua cartinha 💛</h2>
-        <textarea id="textoCarta" placeholder="Digite sua carta aqui..."></textarea>
-        <button onclick="salvarCarta()">Salvar e visualizar modo final</button>
-    </div>
-
-    <!-- Tela de senha para a sua amiga -->
-    <div id="senha-container" style="display:none;">
+    <!-- Tela de Senha -->
+    <div id="senha-container">
         <h2>Digite a senha 🔐</h2>
-        <p class="dica">Dica: <span id="dicaSenha"></span></p>
+        <p class="dica">Dica: uma música insuperável do Luan Santana</p>
 
-        <input type="password" id="senha">
+        <input type="password" id="senha" placeholder="Senha...">
         <button onclick="verificarSenha()">Entrar</button>
         <p id="erro"></p>
     </div>
 
-    <!-- Cartinha final -->
+    <!-- Cartinha -->
     <div id="carta-container" style="display:none;">
         <div class="envelope" onclick="abrirEnvelope()">
-            <img src="envelope.png" id="env">
+            <img src="envelope.png">
         </div>
 
-        <div id="mensagem" class="mensagem"></div>
+        <div id="mensagem" class="mensagem">
+            <p>
+                SUA CARTA AQUI 💛<br><br>
+                (É aqui que você vai escrever o texto definitivo.  
+                Basta trocar este texto no arquivo index.html.)
+            </p>
+        </div>
     </div>
 
     <script src="script.js"></script>
