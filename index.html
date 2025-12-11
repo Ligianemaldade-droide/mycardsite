@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="envelope" onclick="openEnvelope()">
+        <img src="https://i.imgur.com/VRg5U6b.png" alt="Envelope">
+        <p>Toque para abrir</p>
+    </div>
+
+    <div class="letter hidden">
+        <h1>Minha Carta 💌</h1>
+        <p>Escreva sua carta aqui...</p>
+
+        <div class="music-player">
+            <audio id="bg-music" src="musica.mp3"></audio>
+            <button onclick="toggleMusic()">Play/Pause</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
