@@ -1,6 +1,5 @@
-// CONFIGURE AQUI
-const senhaCorreta = "1234";      // senha que sua amiga deve digitar
-const dicaDaSenha = "É o dia do aniversário ;)"; // dica
+AQUI
+
 
 // Mostra a dica
 document.addEventListener("DOMContentLoaded", () => {
