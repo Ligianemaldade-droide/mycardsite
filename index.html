@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta Especial</title>
+    <title>Sua Cartinha 💌</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="envelope" onclick="openEnvelope()">
-        <img src="https://i.imgur.com/VRg5U6b.png" alt="Envelope">
-        <p>Toque para abrir</p>
+    <audio id="music" src="musica.mp3"></audio>
+
+    <!-- Tela onde VOCÊ vai escrever a carta -->
+    <div id="editor-container">
+        <h2>Escreva aqui sua cartinha 💛</h2>
+        <textarea id="textoCarta" placeholder="Digite sua carta aqui..."></textarea>
+        <button onclick="salvarCarta()">Salvar e visualizar modo final</button>
     </div>
 
-    <div class="letter hidden">
-        <h1>Minha Carta 💌</h1>
-        <p>Escreva sua carta aqui...</p>
+    <!-- Tela de senha para a sua amiga -->
+    <div id="senha-container" style="display:none;">
+        <h2>Digite a senha 🔐</h2>
+        <p class="dica">Dica: <span id="dicaSenha"></span></p>
 
-        <div class="music-player">
-            <audio id="bg-music" src="musica.mp3"></audio>
-            <button onclick="toggleMusic()">Play/Pause</button>
+        <input type="password" id="senha">
+        <button onclick="verificarSenha()">Entrar</button>
+        <p id="erro"></p>
+    </div>
+
+    <!-- Cartinha final -->
+    <div id="carta-container" style="display:none;">
+        <div class="envelope" onclick="abrirEnvelope()">
+            <img src="envelope.png" id="env">
         </div>
+
+        <div id="mensagem" class="mensagem"></div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
