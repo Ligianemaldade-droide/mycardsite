@@ -1,35 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f9e9e4;
     text-align: center;
-    padding: 40px;
+    background: #fcefe3;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-.hidden {
-    display: none;
+/* Editor */
+#editor-container textarea {
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
 
+/* Senha */
+.dica {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#erro {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Envelope */
 .envelope img {
-    width: 200px;
+    width: 250px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 1s;
 }
 
-.envelope img:hover {
-    transform: scale(1.05);
+.envelope.aberto img {
+    transform: rotateX(180deg);
 }
 
-.letter {
-    margin-top: 30px;
+/* Mensagem */
+.mensagem {
+    opacity: 0;
+    margin-top: 20px;
+    transition: opacity 1.5s;
+    font-size: 18px;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.music-player button {
-    margin-top: 20px;
-    padding: 10px;
+    border-radius: 10px;
 }
